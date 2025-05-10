@@ -1,0 +1,37 @@
+{
+    "hostname": "some modbus tcp hostname or ip",
+    "port": 8883,
+    "runtime": 15,
+    "msgs": [
+        {
+            "topic": "Fans/command/switch:0",
+            "modbus": {
+                "ip": "some mqtt broker ip or hostname",
+                "slave": 1,
+                "register_address": 100,
+                "count": 1,
+                "type": "coil",
+                "result": ""
+            }
+        },
+        {
+            "topic": "Fans/command/switch:1",
+            "modbus": {
+                "ip": "some mqtt broker ip or hostname",
+                "slave": 1,
+                "register_address": 101,
+                "count": 1,
+                "type": "coil",
+                "result": ""
+            }
+        }
+    ],
+    "auth": {
+        "username": "",
+        "password": ""
+    },
+    "tls": {
+        "ca_certs": "ca-cert.crt"
+    },
+    "retain": true
+}
