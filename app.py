@@ -60,7 +60,7 @@ def startTask():
 
 schedule.every(config["runtime"]).seconds.do(startTask)
 
-# Loop task every 5 seconds
+# Loop task
 # Look thru modbus results then publish to mqtt
 
 if __name__ == "__main__":
